@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: volakaoyrapi
+  buildpack: sdk-for-nodejs
+  command: npm start
+  memory: 128MB
+  domain: eu-gb.cf.appdomain.cloud
+  host: volaka-oyr-api
+  services:
+    - "Natural Language Understanding-95"
